@@ -1,0 +1,22 @@
+/* Custom CSS for improved UI/UX */
+body {
+    padding-top: 56px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #555;
+}
+
+    .nav-link:hover {
+        color: #000;
+    }
+
+footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

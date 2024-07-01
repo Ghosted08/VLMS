@@ -1,0 +1,25 @@
+﻿@model IEnumerable<VLMS.Models.NotificationViewModel>
+
+@{
+    ViewData["Title"] = "Notifications";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Message</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var notification in Model)
+        {
+            <tr>
+                <td>@notification.Message</td>
+                <td>@notification.Date.ToString("g")</td>
+            </tr>
+        }
+    </tbody>
+</table>

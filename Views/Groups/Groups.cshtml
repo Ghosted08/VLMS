@@ -1,0 +1,27 @@
+﻿@model IEnumerable<VLMS.Models.GroupViewModel>
+
+@{
+    ViewData["Title"] = "Groups";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Member Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var group in Model)
+        {
+            <tr>
+                <td>@group.Name</td>
+                <td>@group.Description</td>
+                <td>@group.MemberCount</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to VLMS</h1>
+        <p class="lead">This is the Virtual Learning Management System where you can manage your courses, events, groups, news, and notifications efficiently.</p>
+        <hr class="my-4">
+        <p>Use the navigation bar to explore different sections.</p>
+        <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Courses")" role="button">Explore Courses</a>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Courses</h5>
+                    <p class="card-text">Manage all your courses here.</p>
+                    <a href="@Url.Action("Index", "Courses")" class="btn btn-primary">View Courses</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Events</h5>
+                    <p class="card-text">Stay updated with the latest events.</p>
+                    <a href="@Url.Action("Index", "Events")" class="btn btn-primary">View Events</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Groups</h5>
+                    <p class="card-text">Join and manage groups.</p>
+                    <a href="@Url.Action("Index", "Groups")" class="btn btn-primary">View Groups</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">News</h5>
+                    <p class="card-text">Read the latest news.</p>
+                    <a href="@Url.Action("Index", "News")" class="btn btn-primary">View News</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Notifications</h5>
+                    <p class="card-text">Check your notifications.</p>
+                    <a href="@Url.Action("Index", "Notifications")" class="btn btn-primary">View Notifications</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Privacy</h5>
+                    <p class="card-text">Read our privacy policy.</p>
+                    <a href="@Url.Action("Privacy", "Home")" class="btn btn-primary">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">© 2024 Virtual Learning Management System. All Rights Reserved.</span>
+    </div>
+</footer>

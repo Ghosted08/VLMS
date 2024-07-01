@@ -1,0 +1,27 @@
+﻿@model IEnumerable<VLMS.Models.NewsViewModel>
+
+@{
+    ViewData["Title"] = "News";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Published Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var newsItem in Model)
+        {
+            <tr>
+                <td>@newsItem.Title</td>
+                <td>@newsItem.Content</td>
+                <td>@newsItem.PublishedDate.ToString("g")</td>
+            </tr>
+        }
+    </tbody>
+</table>

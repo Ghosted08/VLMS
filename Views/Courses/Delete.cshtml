@@ -1,0 +1,26 @@
+﻿@model VLMS.Models.Course
+
+@{
+    ViewData["Title"] = "Delete Course";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Delete Course</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">@Model.Department.Name</h6>
+                    <p class="card-text">Credits: @Model.Credits</p>
+                    <p class="card-text">Description: @Model.Description</p>
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="CourseID" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
